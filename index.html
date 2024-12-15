@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=トラッキングID"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "トラッキングID");
+    </script>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ページのタイトル</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href=".adout.css" />
   </head>
 
   <body>
     <h1>見出し</h1>
+    <a href="sample.html"> sampleページへのリンク </a>
     <p>
       <a href="./adout.html">adoutページへのリンク</a>
       次の段落
@@ -18,5 +32,22 @@
     <div>一つ前の要素</div>
     <div class="target">要素</div>
     <div>一つ後の要素</div>
+    <div class="container">
+      <div class="item">
+        <h2>Work 1</h2>
+        <img src="image1.jpg" alt="Work 1" />
+        <p>This is description.</p>
+      </div>
+      <div class="item">
+        <h2>Work 2</h2>
+        <img src="image2.jpg" alt="Work 2" />
+        <p>This is description.</p>
+      </div>
+      <div class="item">
+        <h2>Work 3</h2>
+        <img src="image3.jpg" alt="Work 3" />
+        <p>This is description.</p>
+      </div>
+    </div>
   </body>
 </html>
