@@ -35,9 +35,11 @@ h2 {
 }
 
 @media screen and (600px <= width) {
-  /* ここにスタイルを記述 */
+  .header{
+    
   }
-  
+  }
+
 /* デザイン3: 背景付き見出し */
 .heading-background {
   position: relative;
